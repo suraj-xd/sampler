@@ -287,7 +287,7 @@ Emoji guide for the table:
 - :bulb: for tips
 - :gem: for resources
 - :book: for reads
-- :lightbulb: for ideas
+- :dart: for ideas
 - :exploding_head: for mindblown
 - :zap: for brainfuck
 

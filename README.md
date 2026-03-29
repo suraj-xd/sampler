@@ -38,7 +38,7 @@
 | :bulb: | [**Tips**](./tips) | Quick wins, tricks, insights from the trenches |
 | :gem: | [**Resources**](./resources) | Courses, docs, hidden gems, secret weapons |
 | :book: | [**Reads**](./reads) | Articles, threads, videos worth your time |
-| :lightbulb: | [**Ideas**](./ideas) | Startup ideas, project ideas, side quests worth building |
+| :dart: | [**Ideas**](./ideas) | Startup ideas, project ideas, side quests worth building |
 | :exploding_head: | [**Mind Blown**](./mindblown) | Things that completely change how you see AI |
 | :zap: | [**Brainfuck**](./brainfuck) | Wild, WTF moments — stuff that breaks your brain |
 
