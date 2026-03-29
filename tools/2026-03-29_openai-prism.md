@@ -4,33 +4,26 @@ source: https://prism.openai.com/
 tags: [openai, latex, writing, academic, ai-editor]
 ---
 
-# Prism — OpenAI's AI-Powered LaTeX Editor
+# Prism — OpenAI's LaTeX Editor
 
-> Write research papers with AI assistance, right in your browser. No LaTeX installation needed.
+> OpenAI built a full LaTeX editor. Write papers with AI help, right in your browser.
 
 ![Prism Preview](../previews/openai-prism.png)
 
 **Link**: [prism.openai.com](https://prism.openai.com/)
-**Category**: Writing / Academic
-**Pricing**: Free tier available · Pro at $7/mo for unlimited AI
+**Pricing**: Free · Pro at $7/mo
 
-## What it does
+## What it is
 
-Prism (formerly Crixet, now under OpenAI) is a browser-based LaTeX editor with a built-in AI assistant. You write your paper, and AI helps you draft, edit, and refine — with real-time compilation to PDF. No local LaTeX setup required.
+LaTeX editor that runs in your browser. AI helps you write and edit. Compiles to PDF in real time. No local LaTeX install needed. Used to be called Crixet before OpenAI picked it up.
 
-## Who it's for
+## Cool bits
 
-Researchers, students, and anyone writing academic papers, theses, or technical documents who want AI baked into their writing flow.
+- Voice mode — talk your edits instead of typing
+- Zotero sync for bibliographies
+- Collab editing with co-authors
+- Version snapshots so you can roll back
 
-## Why it's interesting
+## Why care
 
-OpenAI quietly has a full LaTeX editor now. Key highlights:
-
-- **AI assistant with voice mode** — dictate edits to your paper
-- **Real-time PDF compilation** — see changes instantly
-- **Zotero integration** — pull in your bibliography seamlessly
-- **Collaborative editing** — share and work with co-authors
-- **Version history & snapshots** — track every revision
-- **No install** — runs entirely in the browser (Chrome recommended)
-
-This is OpenAI moving beyond chat and APIs into actual productivity tools. If you write papers, this is worth a look.
+OpenAI is quietly shipping actual tools now, not just APIs. If you write academic papers and hate wrestling with LaTeX setup, this is worth 5 minutes of your time.

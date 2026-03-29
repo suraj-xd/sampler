@@ -339,11 +339,49 @@ After creating the content file, update the README's "Latest Drops" section:
 - **Commit message format**: `drop: <brief description>`
 - **Always push** after committing so the repo stays up to date
 
+## Writing Style — Sound Human, Stay Sharp
+
+**Hard limit: ~100 words per drop** (excluding metadata, headings, and bullet points). Say it fast, say it well, move on.
+
+### The vibe
+
+Write like you're texting a smart friend about something cool you found. Casual, direct, a little excited when it warrants it. Not a press release. Not a blog post. Not a LinkedIn thought leader.
+
+### Do this
+
+- Short sentences. Punch, don't ramble.
+- Use "you" — talk to the reader
+- Start with the interesting part, not the backstory
+- Use real words: "use" not "utilize", "help" not "facilitate", "fast" not "high-performance"
+- One idea per sentence
+- If you can cut a word without losing meaning, cut it
+
+### Never do this
+
+These are signs of AI slop — avoid them like the plague:
+
+- **Significance inflation**: "pivotal", "groundbreaking", "revolutionary", "game-changing" — unless it literally is
+- **AI vocabulary**: "Additionally", "Furthermore", "landscape", "showcasing", "testament", "delve", "tapestry", "comprehensive"
+- **Copula avoidance**: Don't say "serves as" when you mean "is". Don't say "boasts" or "features" when you mean "has"
+- **Negative parallelisms**: "It's not just X, it's Y" — just say what it is
+- **Rule of three**: Stop forcing triplets ("innovation, inspiration, and insights"). One good word beats three mid ones.
+- **False ranges**: "from beginners to experts", "from startups to enterprises" — be specific or don't
+- **Filler phrases**: "In order to" → "to". "It's worth noting that" → just note it. "In today's rapidly evolving" → delete the whole sentence
+- **Generic conclusions**: "The future looks bright", "Only time will tell", "This is just the beginning" — end with something real or don't end at all
+- **Em dash overuse**: One per post max. Zero is fine.
+- **Excessive hedging**: "could potentially possibly" — pick one or drop all
+- **Sycophantic tone**: No "Great question!", no "Absolutely!", no exclamation marks unless genuinely earned
+- **Promotional language**: "nestled within", "breathtaking", "cutting-edge" — be specific about what makes it good
+- **Synonym cycling**: Pick a word and stick with it. Don't call it a "tool" then "platform" then "solution" then "offering"
+
+### The test
+
+Read it back. If it sounds like a ChatGPT response, rewrite it. If a human wouldn't say it out loud, delete it.
+
 ## Formatting Principles
 
-- **Scannable**: Someone should get the value in 30 seconds of skimming
-- **No fluff**: Every sentence earns its place
-- **Hooks matter**: The one-line description under the title is what makes someone keep reading
+- **Scannable**: Get the value in 30 seconds of skimming
+- **Hooks matter**: The one-line quote under the title is what makes someone keep reading — make it sharp
 - **Links are sacred**: Always include the source link prominently
 - **Tags are useful**: Add 2-4 relevant tags for future searchability
 - **Keep the user's voice**: If they share with commentary, preserve their perspective
@@ -352,7 +390,6 @@ After creating the content file, update the README's "Latest Drops" section:
 
 - Don't pad short content — if it's a quick tip, keep it quick
 - Don't over-categorize — pick the single best category
-- Don't editorialize — present what it is, not what you think about it
 - Don't capture casual conversation — only capture when the user shares specific content
 - Don't forget to push — the repo is the product, it needs to be live
 
