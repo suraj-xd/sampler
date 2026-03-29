@@ -58,15 +58,16 @@ For any content with a URL, capture a visual preview so readers can see what it 
 
 1. **YouTube videos**: Use the thumbnail URL directly — `https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg`. No screenshot needed, just reference this URL in the markdown.
 2. **og:image**: When fetching a URL with WebFetch, check for `og:image` or `twitter:image` meta tags. If found, use that URL directly in the markdown.
-3. **Playwright screenshot** (fallback): If no og:image is available, use Playwright to navigate to the URL and take a screenshot:
-   - Navigate: `mcp__playwright__browser_navigate` to the URL
-   - Screenshot: `mcp__playwright__browser_take_screenshot` with type `jpeg` and filename `previews/<slug>.jpeg`
+3. **Microlink screenshot** (fallback): If no og:image is available, use Microlink's API to get a screenshot. Download it with curl:
+   ```bash
+   curl -L -o previews/<slug>.png "https://api.microlink.io/?url=<URL>&screenshot=true&meta=false&embed=screenshot.url"
+   ```
+   - This works from mobile and desktop — no browser needed
    - The slug should match the content file's slug (e.g., `openai-prism`)
 
 **Saving previews:**
-- Save screenshots to `previews/<slug>.jpeg`
-- Use JPEG format to keep file sizes small
-- Reference in markdown as: `![Preview](../previews/<slug>.jpeg)`
+- Save screenshots to `previews/<slug>.png`
+- Reference in markdown as: `![Preview](../previews/<slug>.png)`
 
 **In the content file**, place the preview image right after the title and hook line, before the link:
 
@@ -75,7 +76,7 @@ For any content with a URL, capture a visual preview so readers can see what it 
 
 > One-line hook
 
-![Preview](../previews/<slug>.jpeg)
+![Preview](../previews/<slug>.png)
 
 **Link**: [Title](URL)
 ```

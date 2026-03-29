@@ -8,7 +8,7 @@ tags: [openai, latex, writing, academic, ai-editor]
 
 > Write research papers with AI assistance, right in your browser. No LaTeX installation needed.
 
-![Prism Preview](../previews/openai-prism.jpeg)
+![Prism Preview](../previews/openai-prism.png)
 
 **Link**: [prism.openai.com](https://prism.openai.com/)
 **Category**: Writing / Academic
