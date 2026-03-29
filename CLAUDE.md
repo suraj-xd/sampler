@@ -22,7 +22,8 @@ sampler/
 ├── reads/             # Articles, threads, videos worth consuming
 ├── ideas/             # Startup ideas, project ideas, things worth building
 ├── mindblown/         # Mind-blowing discoveries, paradigm shifts
-└── brainfuck/         # Wild, WTF moments that break your brain
+├── brainfuck/         # Wild, WTF moments that break your brain
+└── previews/          # Screenshot previews of linked content
 ```
 
 ## How to Capture Content
@@ -49,7 +50,41 @@ When the user shares something (a link, tweet, tool, video, image, thought), fol
 - **Slug**: short, descriptive, lowercase, hyphenated
 - **Date**: current date in YYYY-MM-DD format
 
-### 3. Format based on content type
+### 3. Capture a preview image
+
+For any content with a URL, capture a visual preview so readers can see what it looks like without clicking:
+
+**Priority order:**
+
+1. **YouTube videos**: Use the thumbnail URL directly — `https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg`. No screenshot needed, just reference this URL in the markdown.
+2. **og:image**: When fetching a URL with WebFetch, check for `og:image` or `twitter:image` meta tags. If found, use that URL directly in the markdown.
+3. **Playwright screenshot** (fallback): If no og:image is available, use Playwright to navigate to the URL and take a screenshot:
+   - Navigate: `mcp__playwright__browser_navigate` to the URL
+   - Screenshot: `mcp__playwright__browser_take_screenshot` with type `jpeg` and filename `previews/<slug>.jpeg`
+   - The slug should match the content file's slug (e.g., `openai-prism`)
+
+**Saving previews:**
+- Save screenshots to `previews/<slug>.jpeg`
+- Use JPEG format to keep file sizes small
+- Reference in markdown as: `![Preview](../previews/<slug>.jpeg)`
+
+**In the content file**, place the preview image right after the title and hook line, before the link:
+
+```markdown
+# Title
+
+> One-line hook
+
+![Preview](../previews/<slug>.jpeg)
+
+**Link**: [Title](URL)
+```
+
+**Skip previews for:**
+- Quick tips or ideas with no URL
+- Content where a visual preview adds no value (e.g., a plain text prompt)
+
+### 4. Format based on content type
 
 #### For a Link / Website / Article
 
@@ -265,7 +300,7 @@ tags: [relevant, tags]
 <Expanded explanation if needed — keep it short and actionable>
 ```
 
-### 4. Update the README
+### 5. Update the README
 
 After creating the content file, update the README's "Latest Drops" section:
 
@@ -291,7 +326,7 @@ Emoji guide for the table:
 - :exploding_head: for mindblown
 - :zap: for brainfuck
 
-### 5. Commit and Push
+### 6. Commit and Push
 
 - **Commit message format**: `drop: <brief description>`
 - **Always push** after committing so the repo stays up to date

@@ -8,6 +8,8 @@ tags: [openai, latex, writing, academic, ai-editor]
 
 > Write research papers with AI assistance, right in your browser. No LaTeX installation needed.
 
+![Prism Preview](../previews/openai-prism.jpeg)
+
 **Link**: [prism.openai.com](https://prism.openai.com/)
 **Category**: Writing / Academic
 **Pricing**: Free tier available · Pro at $7/mo for unlimited AI
