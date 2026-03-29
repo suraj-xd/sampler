@@ -23,7 +23,7 @@
 <!-- LATEST_START -->
 | | Drop | What | Date |
 |---|---|---|---|
-| :wrench: | [**Prism — OpenAI's AI LaTeX Editor**](./tools/2026-03-29_openai-prism.md) | Browser-based LaTeX editor with built-in AI assistant, voice mode, and Zotero integration. No install needed. | 2026-03-29 |
+| <img src="https://www.google.com/s2/favicons?domain=prism.openai.com&sz=32" width="16"> | [**Prism — OpenAI's AI LaTeX Editor**](./tools/2026-03-29_openai-prism.md) | Browser-based LaTeX editor with built-in AI assistant, voice mode, and Zotero integration. No install needed. | 2026-03-29 |
 <!-- LATEST_END -->
 
 ---

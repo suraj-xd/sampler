@@ -305,26 +305,33 @@ tags: [relevant, tags]
 After creating the content file, update the README's "Latest Drops" section:
 
 - Add the new entry between `<!-- LATEST_START -->` and `<!-- LATEST_END -->` markers
-- Format: `| <emoji> | [**Title**](./<category>/filename.md) | <one-line description> | <date> |`
 - Keep only the **latest 10 entries** in the README — remove older ones to keep it clean
-- If it's the very first entry, replace the "*Nothing here yet*" placeholder with a table:
+- Table format:
 
 ```markdown
 | | Drop | What | Date |
 |---|---|---|---|
-| :emoji: | [**Title**](./path/to/file.md) | One-line description | YYYY-MM-DD |
+| <img src="https://www.google.com/s2/favicons?domain=DOMAIN&sz=32" width="16"> | [**Title**](./path/to/file.md) | One-line description | YYYY-MM-DD |
 ```
 
-Emoji guide for the table:
-- :rocket: for launches
-- :wrench: for tools
-- :brain: for prompts
-- :bulb: for tips
-- :gem: for resources
-- :book: for reads
-- :dart: for ideas
-- :exploding_head: for mindblown
-- :zap: for brainfuck
+**Icon in the first column — use favicon with emoji fallback:**
+
+1. **If the content has a source URL**: Use the site's favicon via Google's API:
+   `<img src="https://www.google.com/s2/favicons?domain=DOMAIN&sz=32" width="16">`
+   - Extract just the domain (e.g., `prism.openai.com`, `youtube.com`, `x.com`)
+   - For YouTube links specifically, use `youtube.com` as the domain
+   - For Twitter/X links, use `x.com` as the domain
+
+2. **If no URL** (e.g., a tip or idea with no source): Fall back to emoji:
+   - :rocket: for launches
+   - :wrench: for tools
+   - :brain: for prompts
+   - :bulb: for tips
+   - :gem: for resources
+   - :book: for reads
+   - :dart: for ideas
+   - :exploding_head: for mindblown
+   - :zap: for brainfuck
 
 ### 6. Commit and Push
 
