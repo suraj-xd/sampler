@@ -20,9 +20,10 @@
 
 ## Latest Drops
 
-> *Nothing here yet — first drop coming soon.*
-
 <!-- LATEST_START -->
+| | Drop | What | Date |
+|---|---|---|---|
+| :wrench: | [**Prism — OpenAI's AI LaTeX Editor**](./tools/2026-03-29_openai-prism.md) | Browser-based LaTeX editor with built-in AI assistant, voice mode, and Zotero integration. No install needed. | 2026-03-29 |
 <!-- LATEST_END -->
 
 ---
