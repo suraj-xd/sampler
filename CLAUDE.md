@@ -19,7 +19,10 @@ sampler/
 ├── prompts/           # Prompts, techniques, workflows
 ├── tips/              # Quick wins, tricks, insights
 ├── resources/         # Courses, docs, hidden gems, websites
-└── reads/             # Articles, threads, videos worth consuming
+├── reads/             # Articles, threads, videos worth consuming
+├── ideas/             # Startup ideas, project ideas, things worth building
+├── mindblown/         # Mind-blowing discoveries, paradigm shifts
+└── brainfuck/         # Wild, WTF moments that break your brain
 ```
 
 ## How to Capture Content
@@ -36,6 +39,9 @@ When the user shares something (a link, tweet, tool, video, image, thought), fol
 | `tips/` | Quick insight, trick, hack, lesson learned |
 | `resources/` | Course, doc, guide, hidden gem, website, collection |
 | `reads/` | Article, thread, video, podcast, essay |
+| `ideas/` | Startup idea, project idea, side project concept, "someone should build this" |
+| `mindblown/` | Mind-blowing discovery, paradigm shift, "I can't believe this exists" |
+| `brainfuck/` | Wild demo, WTF moment, something that breaks your brain |
 
 ### 2. Create the file
 
@@ -187,6 +193,53 @@ tags: [relevant, tags]
 <1-2 sentences on why this is effective>
 ```
 
+#### For a Startup / Project Idea
+
+```markdown
+---
+date: YYYY-MM-DD
+tags: [relevant, tags]
+---
+
+# Idea Title
+
+> One-line pitch
+
+## The idea
+
+<What is it? 2-4 sentences describing the concept clearly.>
+
+## Why it could work
+
+<What makes this viable or interesting right now?>
+
+## How to start
+
+<Simplest first step someone could take to validate or prototype this>
+```
+
+#### For Mind Blown / Brainfuck
+
+```markdown
+---
+date: YYYY-MM-DD
+source: <URL if applicable>
+tags: [relevant, tags]
+---
+
+# Title
+
+> One-line hook that makes someone stop scrolling
+
+## What happened
+
+<Describe the thing — demo, discovery, capability, whatever blew your mind>
+
+## Why this is wild
+
+<Context on why this matters or what it implies for the future>
+```
+
 #### For an Image
 
 When the user sends an image:
@@ -234,6 +287,9 @@ Emoji guide for the table:
 - :bulb: for tips
 - :gem: for resources
 - :book: for reads
+- :lightbulb: for ideas
+- :exploding_head: for mindblown
+- :zap: for brainfuck
 
 ### 5. Commit and Push
 
